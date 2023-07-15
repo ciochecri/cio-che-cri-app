@@ -36,11 +36,19 @@ function App() {
 
 
   function getColor(numberRemaining){
+    if(numberRemaining === 0)
+      return '#282c34';
     if(numberRemaining < 10)
       return '#eb9694';
     if(numberRemaining < 30)
       return '#fef3bd'; 
     return '#c1e1c5'; 
+  }
+
+  function getTextColor(numberRemaining){
+    if(numberRemaining === 0)
+      return '#ffffff';
+    return undefined; 
   }
 
   function getSettimanaDescription(index){
@@ -67,12 +75,12 @@ function App() {
       </Box>
       <Box style={styles.cardContainer}>
         {cardData.map((card, index) => (
-          <Card style={{...styles.card, backgroundColor: getColor(80 - card)}} variant="outlined" key={index}>
+          <Card style={{...styles.card, backgroundColor: getColor(80 - card), color: getTextColor(80 - card)}} variant="outlined" key={index}>
             <CardContent>
-              <Typography variant='h6'  gutterBottom>
+              <Typography variant='h6' gutterBottom>
                 Settimana {index + 1}
               </Typography>
-              <Typography sx={{ mb: 1.5 }} color="text.secondary" style={{whiteSpace: 'pre-line'}}>
+              <Typography sx={{ mb: 1.5 }} color="text.secondary" style={{whiteSpace: 'pre-line', color: getTextColor(80 - card)}}>
                 {getSettimanaDescription(index + 1)}
               </Typography>
               <Typography variant="body1">
