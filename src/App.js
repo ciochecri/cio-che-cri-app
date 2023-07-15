@@ -99,13 +99,12 @@ const styles = StyleSheet.create({
   },
   cardContainer: {
     display: 'flex',
-    flexDirection: "row",
+    flexWrap: 'wrap',
     alignItems: "center",
     justifyContent: "center",
   },
   card: {
-    width: '15%',
-    maxWidth : 150,
+    width: 150,
     margin: 10,
   },
 });
