@@ -82,7 +82,7 @@ function App() {
           </Card>
         ))}
       </Box>
-      <Button href="https://docs.google.com/forms/d/e/1FAIpQLSe5fSJX7nVkOrSpV6dc7ZgIJto0Pc1WplG5h36TRBV9bnderw/viewform" variant="contained">VAI AL MODULO DI ISCRIZIONE</Button>
+      <Button style={{marginTop: 20}} href="https://docs.google.com/forms/d/e/1FAIpQLSe5fSJX7nVkOrSpV6dc7ZgIJto0Pc1WplG5h36TRBV9bnderw/viewform" variant="contained">VAI AL MODULO DI ISCRIZIONE</Button>
     </div>
   );
 }
@@ -106,6 +106,7 @@ const styles = StyleSheet.create({
   card: {
     width: 150,
     margin: 10,
+    border: "1px solid white"
   },
 });
 
