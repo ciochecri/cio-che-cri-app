@@ -14,7 +14,7 @@ function App() {
     const dataFetch = async () => {
       var res = await (
         await fetch(
-          'https://docs.google.com/spreadsheets/d/e/2PACX-1vR98DbyZQkecrLhCJDNUlpfg5cDUtsOgI1PFQs60F0D69qKEfaa41HFaY2qc-IftkMgW312Y3gI6ImW/pub?gid=574938590&single=true&output=csv'
+          'https://docs.google.com/spreadsheets/d/e/2PACX-1vSiQYKdJisuLcFg0vydiJGGwYTI6wv1SoWVMPECybZhtrkWm4Zsme2yAPeKfKSzkJXBsESxtY60oSrN/pub?gid=574938590&single=true&output=csv'
         )
       ).blob().then(b => b.text());
 
@@ -26,7 +26,9 @@ function App() {
          results.data[0]['S3'],
          results.data[0]['S4'],
          results.data[0]['S5'],
-         results.data[0]['S6']];
+         results.data[0]['S6'],
+         results.data[0]['S7'],        
+         results.data[0]['S8']];
         setCardData(data);
       }
     };
@@ -53,17 +55,21 @@ function App() {
 
   function getSettimanaDescription(index){
     if(index === 1)
-      return '27 novembre\n1 dicembre';
+      return '10 giugno\n14 giugno';
     if(index === 2)
-      return '4 dicembre\n8 dicembre';
+      return '17 giugno\n21 giugno';
     if(index === 3)
-      return '11 dicembre\n15 dicembre';
+      return '24 giugno\n28 giugno';
     if(index === 4)
-      return '18 dicembre\n22 dicembre';
+      return '1 luglio\n5 luglio';
     if(index === 5)
-      return '8 gennaio\n12 gennaio';
+      return '8 luglio\n12 luglio';
     if(index === 6)
-      return '15 gennaio\n19 gennaio';
+      return '15 luglio\n19 luglio';
+    if(index === 7)
+      return '22 luglio\n26 luglio';
+    if(index === 8)
+      return '29 luglio\n2 agosto';
     return '';
   }
 
@@ -71,7 +77,7 @@ function App() {
   return (
     <div className="App">
       <Box style={styles.logoContainer}>
-        <Typography style={styles.logo} variant='h1'>Ciò Che Cri</Typography>
+        <Typography style={styles.logo} variant='h1'>Ciò Che CRE</Typography>
       </Box>
       <Box style={styles.cardContainer}>
         {cardData.map((card, index) => (
