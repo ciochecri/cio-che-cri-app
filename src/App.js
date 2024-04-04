@@ -96,7 +96,12 @@ function App() {
           </Card>
         ))}
       </Box>
-      <Button style={{marginTop: 20}} href="https://forms.gle/pMsBUb6BFJ8yPcgw8" variant="contained">VAI AL MODULO DI ISCRIZIONE</Button>
+      <Box>
+        <Button style={{marginTop: 20}} href="https://forms.gle/xKNuo3RomhvX2jit8" variant="contained">VAI AL MODULO DI ISCRIZIONE</Button>
+      </Box>
+      <Box>
+      <Button style={{marginTop: 20}} href="https://forms.gle/uyZhCyLYQskPtnoE7np" variant="contained">VAI AL MODULO DI AGGIUNTA SETTIMANE (solo per utenti già iscritti)</Button>
+      </Box>
     </div>
   );
 }
