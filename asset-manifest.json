@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/cio-che-cri-app/static/css/main.f5c8a28f.css",
-    "main.js": "/cio-che-cri-app/static/js/main.3594d56e.js",
+    "main.js": "/cio-che-cri-app/static/js/main.a9c333dc.js",
     "static/js/787.25b703a7.chunk.js": "/cio-che-cri-app/static/js/787.25b703a7.chunk.js",
     "index.html": "/cio-che-cri-app/index.html",
     "main.f5c8a28f.css.map": "/cio-che-cri-app/static/css/main.f5c8a28f.css.map",
-    "main.3594d56e.js.map": "/cio-che-cri-app/static/js/main.3594d56e.js.map",
+    "main.a9c333dc.js.map": "/cio-che-cri-app/static/js/main.a9c333dc.js.map",
     "787.25b703a7.chunk.js.map": "/cio-che-cri-app/static/js/787.25b703a7.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f5c8a28f.css",
-    "static/js/main.3594d56e.js"
+    "static/js/main.a9c333dc.js"
   ]
 }
