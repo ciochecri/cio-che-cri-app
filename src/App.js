@@ -8,6 +8,8 @@ import './App.css';
 function App() {
   const [cardData, setCardData] = useState([]);
 
+  const MAX_NUM = 72;
+
 
   useEffect(() => {
     // fetch data
@@ -81,32 +83,32 @@ function App() {
       </Box>
       <Box style={styles.cardContainer}>
         {cardData.map((card, index) => (
-          <Card style={{...styles.card, backgroundColor: getColor(80 - card), color: getTextColor(80 - card)}} variant="outlined" key={index}>
+          <Card style={{...styles.card, backgroundColor: getColor(MAX_NUM - card), color: getTextColor(MAX_NUM - card)}} variant="outlined" key={index}>
             <CardContent>
               <Typography variant='h6' gutterBottom>
                 Settimana {index + 1}
               </Typography>
-              <Typography sx={{ mb: 1.5 }} color="text.secondary" style={{whiteSpace: 'pre-line', color: getTextColor(80 - card)}}>
+              <Typography sx={{ mb: 1.5 }} color="text.secondary" style={{whiteSpace: 'pre-line', color: getTextColor(MAX_NUM - card)}}>
                 {getSettimanaDescription(index + 1)}
               </Typography>
               <Typography variant="body1">
-                Posti rimanenti <br/> {80 - card}
+                Posti rimanenti <br/> {MAX_NUM - card}
               </Typography>
             </CardContent>
           </Card>
         ))}
       </Box>
       <Box>
-        <Button style={{marginTop: 20}} href="https://forms.gle/xKNuo3RomhvX2jit8" variant="contained">VAI AL MODULO DI ISCRIZIONE</Button>
+        <Button style={{marginTop: 20}} href="https://forms.gle/xKNuo3RomhvX2jit8" variant="contained" disabled = {true}>VAI AL MODULO DI ISCRIZIONE</Button>
       </Box>
       <Box>
-      <Button style={{marginTop: 20}} href="https://forms.gle/uyZhCyLYQskPtnoE7np" variant="contained">VAI AL MODULO DI AGGIUNTA SETTIMANE (solo per utenti già iscritti)</Button>
+      <Button style={{marginTop: 20}} href="https://forms.gle/uyZhCyLYQskPtnoE7np" variant="contained" disabled = {true}>VAI AL MODULO DI AGGIUNTA SETTIMANE (solo per utenti già iscritti)</Button>
       </Box>
     </div>
   );
 }
 
-//backgroundColor: getColor(80 - card)
+//backgroundColor: getColor(MAX_NUM - card)
 
 const styles = StyleSheet.create({
   logoContainer: {
