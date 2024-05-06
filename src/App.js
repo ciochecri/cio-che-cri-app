@@ -79,7 +79,7 @@ function App() {
   return (
     <div className="App">
       <Box style={styles.logoContainer}>
-        <img src="https://i.ibb.co/TKvrMsq/Logo-CRE.png" alt="Logo" style={{width: 200}}/>;
+        <img src="https://i.ibb.co/TKvrMsq/Logo-CRE.png" alt="Logo" style={{width: 200}}/>
       </Box>
       <Box style={styles.cardContainer}>
         {cardData.map((card, index) => (
@@ -92,7 +92,7 @@ function App() {
                 {getSettimanaDescription(index + 1)}
               </Typography>
               <Typography variant="body1">
-                Posti rimanenti <br/> {MAX_NUM - card}
+                Posti rimanenti <br/> <span style={{fontWeight: 'bold'}}>{MAX_NUM - card}</span> / {MAX_NUM}
               </Typography>
             </CardContent>
           </Card>
