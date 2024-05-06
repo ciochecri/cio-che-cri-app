@@ -79,7 +79,7 @@ function App() {
   return (
     <div className="App">
       <Box style={styles.logoContainer}>
-        <Typography style={styles.logo} variant='h1'>Ciò Che CRE</Typography>
+        <img src="https://i.ibb.co/TKvrMsq/Logo-CRE.png" alt="Logo" style={{width: 200}}/>;
       </Box>
       <Box style={styles.cardContainer}>
         {cardData.map((card, index) => (
@@ -102,7 +102,7 @@ function App() {
         <Button style={{marginTop: 20}} href="https://forms.gle/fBHyAVrmFGTqKgVv6" variant="contained" disabled = {false}>VAI AL MODULO DI ISCRIZIONE</Button>
       </Box>
       <Box>
-      <Button style={{marginTop: 20}} href="https://forms.gle/uyZhCyLYQskPtnoE7np" variant="contained" disabled = {true}>VAI AL MODULO DI AGGIUNTA SETTIMANE (solo per utenti già iscritti)</Button>
+      <Button style={{marginTop: 20}} href="https://forms.gle/aJTkQ9Z5pRf1BRfP9" variant="contained" disabled = {true}>VAI AL MODULO DI AGGIUNTA SETTIMANE (solo per utenti già iscritti)</Button>
       </Box>
     </div>
   );
