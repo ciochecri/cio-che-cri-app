@@ -99,7 +99,7 @@ function App() {
         ))}
       </Box>
       <Box>
-        <Button style={{marginTop: 20}} href="https://forms.gle/xKNuo3RomhvX2jit8" variant="contained" disabled = {true}>VAI AL MODULO DI ISCRIZIONE</Button>
+        <Button style={{marginTop: 20}} href="https://forms.gle/fBHyAVrmFGTqKgVv6" variant="contained" disabled = {false}>VAI AL MODULO DI ISCRIZIONE</Button>
       </Box>
       <Box>
       <Button style={{marginTop: 20}} href="https://forms.gle/uyZhCyLYQskPtnoE7np" variant="contained" disabled = {true}>VAI AL MODULO DI AGGIUNTA SETTIMANE (solo per utenti già iscritti)</Button>
