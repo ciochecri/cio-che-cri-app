@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/cio-che-cri-app/static/css/main.f5c8a28f.css",
-    "main.js": "/cio-che-cri-app/static/js/main.a9c333dc.js",
+    "main.css": "/cio-che-cri-app/static/css/main.70fd049d.css",
+    "main.js": "/cio-che-cri-app/static/js/main.a85735fa.js",
     "static/js/787.25b703a7.chunk.js": "/cio-che-cri-app/static/js/787.25b703a7.chunk.js",
     "index.html": "/cio-che-cri-app/index.html",
-    "main.f5c8a28f.css.map": "/cio-che-cri-app/static/css/main.f5c8a28f.css.map",
-    "main.a9c333dc.js.map": "/cio-che-cri-app/static/js/main.a9c333dc.js.map",
+    "main.70fd049d.css.map": "/cio-che-cri-app/static/css/main.70fd049d.css.map",
+    "main.a85735fa.js.map": "/cio-che-cri-app/static/js/main.a85735fa.js.map",
     "787.25b703a7.chunk.js.map": "/cio-che-cri-app/static/js/787.25b703a7.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f5c8a28f.css",
-    "static/js/main.a9c333dc.js"
+    "static/css/main.70fd049d.css",
+    "static/js/main.a85735fa.js"
   ]
 }
