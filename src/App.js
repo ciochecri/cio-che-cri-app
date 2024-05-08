@@ -99,10 +99,10 @@ function App() {
         ))}
       </Box>
       <Box>
-        <Button style={{marginTop: 20}} href="https://forms.gle/fBHyAVrmFGTqKgVv6" variant="contained" disabled = {false}>VAI AL MODULO DI ISCRIZIONE</Button>
+        <Button style={{marginTop: 20, maxWidth: 300}} href="https://forms.gle/fBHyAVrmFGTqKgVv6" variant="contained" disabled = {false}>VAI AL MODULO DI ISCRIZIONE</Button>
       </Box>
       <Box>
-      <Button style={{marginTop: 20}} href="https://forms.gle/aJTkQ9Z5pRf1BRfP9" variant="contained" disabled = {true}>VAI AL MODULO DI AGGIUNTA SETTIMANE (solo per utenti già iscritti)</Button>
+        <Button style={{marginTop: 20, maxWidth: 300}} href="https://forms.gle/CY8bV8Ss3Sh37xxw9" variant="contained" disabled = {true}>VAI AL MODULO DI AGGIUNTA SETTIMANE (solo per utenti già iscritti)</Button>
       </Box>
     </div>
   );
