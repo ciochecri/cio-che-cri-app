@@ -135,7 +135,7 @@ function App() {
             <Button startIcon={<FileDownload />} style={{marginTop: 15, width: 300}} href="https://drive.google.com/uc?export=download&id=1qKm7BrAIZxBb0LogOL4BqQozItDNMnp6" variant="outlined" disabled = {false}>VOLANTINO</Button>
           </Box>
           <Box>
-            <Button startIcon={<FileDownload />} style={{marginTop: 15, width: 300}} href="https://drive.google.com/uc?export=download&id=XXXXXXXXXXXXXXXXXX" variant="outlined" disabled = {true}>REGOLAMENTO</Button>
+            <Button startIcon={<FileDownload />} style={{marginTop: 15, width: 300}} href="https://drive.google.com/uc?export=download&id=1z2qdvlqzq_dEXBOuTt4JEEx2HHiXe9sE" variant="outlined" disabled = {false}>REGOLAMENTO</Button>
           </Box>
         </Box>
         <Box style={styles.downloadsContainer}>
