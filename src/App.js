@@ -1,6 +1,13 @@
+import * as React from 'react';
 import { Box, Button, Card, CardContent, Typography,} from '@mui/material';
 import { useEffect, useState } from 'react';
 import { StyleSheet } from "react-native";
+import { FileDownload, Send} from "@mui/icons-material";
+import SportsHandballIcon from '@mui/icons-material/SportsHandball';
+import IconButton from '@mui/material/IconButton';
+import FacebookIcon from '@mui/icons-material/Facebook';
+import InstagramIcon from '@mui/icons-material/Instagram';
+
 
 import Papa from 'papaparse';
 import './App.css';
@@ -75,7 +82,6 @@ function App() {
     return '';
   }
 
-
   return (
     <div className="App">
       <Box style={styles.logoContainer}>
@@ -98,12 +104,61 @@ function App() {
           </Card>
         ))}
       </Box>
-      <Box>
-        <Button style={{marginTop: 20, maxWidth: 300}} href="https://forms.gle/fBHyAVrmFGTqKgVv6" variant="contained" disabled = {false}>VAI AL MODULO DI ISCRIZIONE</Button>
+      <Box style={styles.allLinksContainer}>
+        <Box style={styles.buttonsContainer}>
+          <Typography variant='h6' gutterBottom>
+            Moduli
+          </Typography>
+          <Typography variant='subtitle2' gutterBottom>
+            Prima di iscriverti assicurati di avere a portata di mano:
+          </Typography>
+          <ul style={{fontSize: 15, textAlign: "left"}}>
+            <li>Tessera sanitaria del bambino/a</li>
+            <li>Libretto verde dello sportivo</li>
+            <li>Contabile del bonifico</li>
+            <li>Documenti dei delegati</li>
+          </ul>
+          <Box>
+            <Button endIcon={<Send />} style={{marginTop: 20, width: 300}} href="https://forms.gle/fBHyAVrmFGTqKgVv6" variant="contained" disabled = {false}>MODULO DI ISCRIZIONE</Button>
+          </Box>
+          <Box>
+            <Button endIcon={<Send />} style={{marginTop: 20, width: 300, fontSize: 12}} href="https://forms.gle/CY8bV8Ss3Sh37xxw9" variant="contained" disabled = {true}>MODULO DI AGGIUNTA SETTIMANE (solo per utenti già iscritti)</Button>
+          </Box>
+        </Box>
       </Box>
-      <Box>
-        <Button style={{marginTop: 20, maxWidth: 300}} href="https://forms.gle/CY8bV8Ss3Sh37xxw9" variant="contained" disabled = {true}>VAI AL MODULO DI AGGIUNTA SETTIMANE (solo per utenti già iscritti)</Button>
+      <Box style={styles.allLinksContainer}>
+        <Box style={styles.downloadsContainer}>
+          <Typography variant='text.secondary' gutterBottom>
+          </Typography>
+            Centro estivo Ció che CRE
+          <Box>
+            <Button startIcon={<FileDownload />} style={{marginTop: 15, width: 300}} href="https://drive.google.com/uc?export=download&id=1qKm7BrAIZxBb0LogOL4BqQozItDNMnp6" variant="outlined" disabled = {false}>VOLANTINO</Button>
+          </Box>
+          <Box>
+            <Button startIcon={<FileDownload />} style={{marginTop: 15, width: 300}} href="https://drive.google.com/uc?export=download&id=XXXXXXXXXXXXXXXXXX" variant="outlined" disabled = {true}>REGOLAMENTO</Button>
+          </Box>
+        </Box>
+        <Box style={styles.downloadsContainer}>
+          <Typography variant='text.secondary' gutterBottom>
+            Vuoi provare pallamano?
+          </Typography>
+          <Box>
+            <Button startIcon={<FileDownload />} style={{marginTop: 15, width: 300}} href="https://drive.google.com/uc?export=download&id=1ehp2ZJEDzjtgD0kt7BfOxGOU8TP6UKwm" variant="outlined" disabled = {false}>VOLANTINO</Button>
+          </Box>
+          <Box style={{marginTop: "10px"}}>
+            <IconButton aria-label="Linkedin.com" href="https://www.facebook.com/pallamanoromagna1/?locale=it_IT" target="_blank">
+              <FacebookIcon fontSize="large" />
+            </IconButton>
+            <IconButton aria-label="Instagram.com" href="https://www.instagram.com/pallamanomordano1980/" target="_blank">
+              <InstagramIcon fontSize="large" />
+            </IconButton>
+            <IconButton aria-label="Instagram.com" href="https://www.pallamanoromagna.it/" target="_blank">
+              <SportsHandballIcon fontSize="large" />
+            </IconButton>
+          </Box>
+        </Box>
       </Box>
+
     </div>
   );
 }
@@ -128,6 +183,26 @@ const styles = StyleSheet.create({
     width: 150,
     margin: 10,
     border: "1px solid white"
+  },
+  allLinksContainer: {
+    display: 'flex',
+    flexWrap: 'wrap',
+    alignItems: "center",
+    justifyContent: "center",
+  },
+  buttonsContainer: {
+    width: 350,
+    margin: 20,
+    border: "1px solid black",
+    padding: 10,
+    height: 330
+  },
+  downloadsContainer: {
+    width: 350,
+    margin: 20,
+    border: "1px solid black",
+    padding: 10,
+    height: 135
   },
 });
 
