@@ -89,12 +89,12 @@ function App() {
       </Box>
       <Box style={styles.cardContainer}>
         {cardData.map((card, index) => (
-          <Card style={{...styles.card, backgroundColor: getColor(MAX_NUM - card), color: getTextColor(MAX_NUM - card)}} variant="outlined" key={index}>
+          <Card style={{...styles.card, backgroundColor: getColor(MAX_NUM - card - OFFSET), color: getTextColor(MAX_NUM - card - OFFSET)}} variant="outlined" key={index}>
             <CardContent>
               <Typography variant='h6' gutterBottom>
                 Settimana {index + 1}
               </Typography>
-              <Typography sx={{ mb: 1.5 }} color="text.secondary" style={{whiteSpace: 'pre-line', color: getTextColor(MAX_NUM - card)}}>
+              <Typography sx={{ mb: 1.5 }} color="text.secondary" style={{whiteSpace: 'pre-line', color: getTextColor(MAX_NUM - card - OFFSET)}}>
                 {getSettimanaDescription(index + 1)}
               </Typography>
               <Typography variant="body1">
