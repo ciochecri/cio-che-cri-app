@@ -16,7 +16,7 @@ function App() {
   const [cardData, setCardData] = useState([]);
 
   const MAX_NUM = 72;
-
+  const OFFSET = 10;
 
   useEffect(() => {
     // fetch data
@@ -98,7 +98,7 @@ function App() {
                 {getSettimanaDescription(index + 1)}
               </Typography>
               <Typography variant="body1">
-                Posti rimanenti <br/> <span style={{fontWeight: 'bold'}}>{MAX_NUM - card}</span> / {MAX_NUM}
+                Posti rimanenti <br/> <span style={{fontWeight: 'bold'}}>{MAX_NUM - card - OFFSET}</span> / {MAX_NUM}
               </Typography>
             </CardContent>
           </Card>
