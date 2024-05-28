@@ -16,7 +16,7 @@ function App() {
   const [cardData, setCardData] = useState([]);
 
   const MAX_NUM = 72;
-  const OFFSET = 10;
+  const OFFSET = Math.max(0, Math.round((new Date("06/06/2024").getTime() - new Date().getTime())/ (1000 * 3600 * 24)));
 
   useEffect(() => {
     // fetch data
