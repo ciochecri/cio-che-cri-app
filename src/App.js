@@ -87,7 +87,7 @@ function App() {
       <Box style={styles.logoContainer}>
         <img src="https://i.ibb.co/TKvrMsq/Logo-CRE.png" alt="Logo" style={{width: 200}}/>
       </Box>
-      <Box style={styles.cardContainer}>
+       <Box style={styles.cardContainer}>
         {cardData.map((card, index) => (
           <Card style={{...styles.card, backgroundColor: getColor(MAX_NUM - card - OFFSET), color: getTextColor(MAX_NUM - card - OFFSET)}} variant="outlined" key={index}>
             <CardContent>
@@ -103,7 +103,7 @@ function App() {
             </CardContent>
           </Card>
         ))}
-      </Box>
+      </Box> 
       <Box style={styles.allLinksContainer}>
         <Box style={styles.buttonsContainer}>
           <Typography variant='h6' gutterBottom>
@@ -123,6 +123,9 @@ function App() {
           </Box>
           <Box>
             <Button endIcon={<Send />} style={{marginTop: 20, width: 300, fontSize: 12}} href="https://forms.gle/CY8bV8Ss3Sh37xxw9" variant="contained" disabled = {false}>MODULO DI AGGIUNTA SETTIMANE (solo per utenti già iscritti)</Button>
+          </Box>
+          <Box>
+            <Button endIcon={<Send />} style={{marginTop: 20, width: 300, fontSize: 14}} href="https://forms.gle/3YgbK8jzjBKRFKHN9" variant="contained" disabled = {false}>QUESTIONARIO DI GRADIMENTO</Button>
           </Box>
         </Box>
       </Box>
@@ -195,7 +198,7 @@ const styles = StyleSheet.create({
     margin: 20,
     border: "1px solid black",
     padding: 10,
-    height: 330
+    height: 365
   },
   downloadsContainer: {
     width: 350,
