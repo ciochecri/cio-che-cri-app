@@ -125,7 +125,7 @@ function App() {
             <Button endIcon={<Send />} style={{marginTop: 20, width: 300, fontSize: 12}} href="https://forms.gle/CY8bV8Ss3Sh37xxw9" variant="contained" disabled = {false}>MODULO DI AGGIUNTA SETTIMANE (solo per utenti già iscritti)</Button>
           </Box>
           <Box>
-            <Button endIcon={<Send />} style={{marginTop: 20, width: 300, fontSize: 14}} href="https://forms.gle/3YgbK8jzjBKRFKHN9" variant="contained" disabled = {false}>QUESTIONARIO DI GRADIMENTO</Button>
+            <Button endIcon={<Send />} style={{marginTop: 20, width: 300, fontSize: 14}} href="https://forms.gle/LjXE7hhdAPAXbcfu8" variant="contained" disabled = {false}>QUESTIONARIO DI GRADIMENTO</Button>
           </Box>
         </Box>
       </Box>
