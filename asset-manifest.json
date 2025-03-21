@@ -1,15 +1,31 @@
 {
   "files": {
-    "main.css": "/cio-che-cri-app/static/css/main.70fd049d.css",
-    "main.js": "/cio-che-cri-app/static/js/main.df48de41.js",
-    "static/js/787.25b703a7.chunk.js": "/cio-che-cri-app/static/js/787.25b703a7.chunk.js",
+    "main.css": "/cio-che-cri-app/static/css/main.37ddbf14.css",
+    "main.js": "/cio-che-cri-app/static/js/main.a5b27cf0.js",
+    "static/js/316.9e88daa7.chunk.js": "/cio-che-cri-app/static/js/316.9e88daa7.chunk.js",
+    "static/js/676.e7e16130.chunk.js": "/cio-che-cri-app/static/js/676.e7e16130.chunk.js",
+    "static/js/412.3549bb51.chunk.js": "/cio-che-cri-app/static/js/412.3549bb51.chunk.js",
+    "static/js/538.052606b2.chunk.js": "/cio-che-cri-app/static/js/538.052606b2.chunk.js",
+    "static/js/689.6fa0538d.chunk.js": "/cio-che-cri-app/static/js/689.6fa0538d.chunk.js",
+    "static/js/614.25994d7a.chunk.js": "/cio-che-cri-app/static/js/614.25994d7a.chunk.js",
+    "static/js/384.e0fb4c38.chunk.js": "/cio-che-cri-app/static/js/384.e0fb4c38.chunk.js",
+    "static/js/545.a208f435.chunk.js": "/cio-che-cri-app/static/js/545.a208f435.chunk.js",
+    "static/js/35.0d52b327.chunk.js": "/cio-che-cri-app/static/js/35.0d52b327.chunk.js",
     "index.html": "/cio-che-cri-app/index.html",
-    "main.70fd049d.css.map": "/cio-che-cri-app/static/css/main.70fd049d.css.map",
-    "main.df48de41.js.map": "/cio-che-cri-app/static/js/main.df48de41.js.map",
-    "787.25b703a7.chunk.js.map": "/cio-che-cri-app/static/js/787.25b703a7.chunk.js.map"
+    "main.37ddbf14.css.map": "/cio-che-cri-app/static/css/main.37ddbf14.css.map",
+    "main.a5b27cf0.js.map": "/cio-che-cri-app/static/js/main.a5b27cf0.js.map",
+    "316.9e88daa7.chunk.js.map": "/cio-che-cri-app/static/js/316.9e88daa7.chunk.js.map",
+    "676.e7e16130.chunk.js.map": "/cio-che-cri-app/static/js/676.e7e16130.chunk.js.map",
+    "412.3549bb51.chunk.js.map": "/cio-che-cri-app/static/js/412.3549bb51.chunk.js.map",
+    "538.052606b2.chunk.js.map": "/cio-che-cri-app/static/js/538.052606b2.chunk.js.map",
+    "689.6fa0538d.chunk.js.map": "/cio-che-cri-app/static/js/689.6fa0538d.chunk.js.map",
+    "614.25994d7a.chunk.js.map": "/cio-che-cri-app/static/js/614.25994d7a.chunk.js.map",
+    "384.e0fb4c38.chunk.js.map": "/cio-che-cri-app/static/js/384.e0fb4c38.chunk.js.map",
+    "545.a208f435.chunk.js.map": "/cio-che-cri-app/static/js/545.a208f435.chunk.js.map",
+    "35.0d52b327.chunk.js.map": "/cio-che-cri-app/static/js/35.0d52b327.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.70fd049d.css",
-    "static/js/main.df48de41.js"
+    "static/css/main.37ddbf14.css",
+    "static/js/main.a5b27cf0.js"
   ]
 }
