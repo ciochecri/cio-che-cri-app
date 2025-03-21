@@ -1,0 +1,21 @@
+{
+  "title": "Calcola il prezzo dell'esperienza",
+  "text": "Utilizza il calcolatore a sinistra per verificare il totale che andrai a pagare.",
+  "section": [
+    {
+      "title": "130 € / settimana",
+      "content": "se l'iscrizione comprende quattro o meno settimane di campo estivo in un'unica soluzione",
+      "icon": "notes.svg"
+    },
+    {
+      "title": "120 € / settimana",
+      "content": "se l'iscrizione comprende cinque o sei settimane di campo estivo in un'unica soluzione",
+      "icon": "notes.svg"
+    },
+    {
+      "title": "110 € / settimana",
+      "content": "se l'iscrizione comprende sette o più settimane di campo estivo in un'unica soluzione",
+      "icon": "notes.svg"
+    }
+  ]
+}

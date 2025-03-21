@@ -1,0 +1,16 @@
+{
+  "title": "Landing page template for developers & startups",
+  "text": "Beautifully designed templates using React.js, ant design and styled-components! Save weeks of time and build your landing page in minutes.",
+  "button": [
+    {
+      "title": "Vai al modulo di iscrizione",
+      "href" : "https://forms.gle/fBHyAVrmFGTqKgVv6"
+    },
+    {
+      "title": "Vai al modulo di aggiunta settimane",
+      "color": "#fff",
+      "disabled" : true,
+      "href" : "https://forms.gle/fBHyAVrmFGTqKgVv6"
+    }
+  ]
+}
