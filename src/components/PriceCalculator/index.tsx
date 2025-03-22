@@ -1,6 +1,6 @@
-import { Row, Col, Slider, InputNumber, InputNumberProps, SliderSingleProps } from "antd";
+import { Col, Slider, InputNumberProps, SliderSingleProps } from "antd";
 import { useState } from 'react';
-import { withTranslation, TFunction } from "react-i18next";
+import { withTranslation } from "react-i18next";
 
 const formatter: NonNullable<SliderSingleProps['tooltip']>['formatter'] = (value) => `${value} ${value === 1 ? "settimana" : "settimane"}`;
 
@@ -22,8 +22,8 @@ const PriceCalculator = () => {
         tooltip={{ formatter, open: true }}
       />
       <div style={{minHeight: 170}}>
-        <h6 style={{textDecoration : inputValue > 4 ? "line-through" : "none", textAlign: "center"}}>{inputValue * 130 + " €"}</h6>
-        {inputValue > 4 && <h6 style={{textAlign: "center"}}>{inputValue > 6 ?  inputValue * 110 : inputValue * 120 }{" €"}</h6>}
+        <h6 style={{textDecoration : inputValue > 4 ? "line-through" : "none", textAlign: "center"}}>{inputValue * 110 + " €"}</h6>
+        {inputValue > 4 && <h6 style={{textAlign: "center"}}>{inputValue > 6 ?  inputValue * 90 : inputValue * 100 }{" €"}</h6>}
       </div>
     </Col>
   );
