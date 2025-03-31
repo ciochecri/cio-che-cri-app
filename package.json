@@ -1,6 +1,6 @@
 {
   "name": "test-netlify-deployment",
-  "homepage": "https://ciochecri.github.io/cio-che-cri-app",
+  "homepage": "http://ciochecre.com",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
