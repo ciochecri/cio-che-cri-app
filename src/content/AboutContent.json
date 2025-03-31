@@ -4,17 +4,17 @@
   "section": [
     {
       "title": "110 € / settimana",
-      "content": "se l'iscrizione comprende quattro o meno settimane di campo estivo in un'unica soluzione",
+      "content": "se l'iscrizione comprende quattro o meno settimane di campo estivo",
       "icon": "notes.svg"
     },
     {
       "title": "100 € / settimana",
-      "content": "se l'iscrizione comprende cinque o sei settimane di campo estivo in un'unica soluzione",
+      "content": "se l'iscrizione comprende cinque o sei settimane di campo estivo",
       "icon": "notes.svg"
     },
     {
       "title": "90 € / settimana",
-      "content": "se l'iscrizione comprende sette o più settimane di campo estivo in un'unica soluzione",
+      "content": "se l'iscrizione comprende sette o più settimane di campo estivo",
       "icon": "notes.svg"
     }
   ]
