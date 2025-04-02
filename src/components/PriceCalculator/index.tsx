@@ -22,8 +22,8 @@ const PriceCalculator = () => {
         tooltip={{ formatter, open: true }}
       />
       <div style={{minHeight: 170}}>
-        <h6 style={{textDecoration : inputValue > 4 ? "line-through" : "none", textAlign: "center"}}>{inputValue * 110 + " €"}</h6>
-        {inputValue > 4 && <h6 style={{textAlign: "center"}}>{inputValue > 6 ?  inputValue * 90 : inputValue * 100 }{" €"}</h6>}
+        <h6 style={{textDecoration : inputValue > 3 ? "line-through" : "none", textAlign: "center"}}>{inputValue * 110 + " €"}</h6>
+        {inputValue > 3 && <h6 style={{textAlign: "center"}}>{inputValue > 6 ?  inputValue * 90 : inputValue * 100 }{" €"}</h6>}
       </div>
     </Col>
   );
