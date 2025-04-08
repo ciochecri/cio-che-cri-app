@@ -16,6 +16,7 @@ import {
   MinPara,
   StyledRow,
   ButtonWrapper,
+  NotePara
 } from "./styles";
 import PriceCalculator from "../PriceCalculator";
 
@@ -29,7 +30,8 @@ const ContentBlock = ({
   id,
   direction,
   cards,
-  priceCalculator
+  priceCalculator,
+  notes
 }: ContentBlockProps) => {
   const scrollTo = (id: string) => {
     const element = document.getElementById(id) as HTMLDivElement;
@@ -55,8 +57,8 @@ const ContentBlock = ({
           </Col>
           <Col lg={11} md={11} sm={11} xs={24}>
             <ContentWrapper>
-              <h6>{t(title)}</h6>
-              <Content>{t(content)}</Content>
+              <h6>{title}</h6>
+              <Content>{content}</Content>
               {direction === "right" ? (
                 <ButtonWrapper>
                   {typeof button === "object" &&
@@ -110,6 +112,19 @@ const ContentBlock = ({
                         }
                       )}
                   </Row>
+                  <Col>
+                    {typeof notes === "object" &&
+                      notes.map(
+                        (
+                          item: string,
+                          id: number
+                        ) => {
+                          return (
+                            <NotePara>{item}</NotePara>
+                          );
+                        }
+                      )}
+                  </Col>
                 </ServiceWrapper>
               )}
             </ContentWrapper>

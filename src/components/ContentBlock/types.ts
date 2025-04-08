@@ -23,4 +23,5 @@ export interface ContentBlockProps {
   direction: "left" | "right";
   cards? : boolean;
   priceCalculator? : boolean;
+  notes? : string[]
 }

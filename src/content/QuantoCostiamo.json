@@ -1,6 +1,6 @@
 {
-  "title": "Calcola il prezzo dell'esperienza",
-  "text": "Utilizza il calcolatore a sinistra per verificare il totale che andrai a pagare.",
+  "title": "QUANTO COSTIAMO?",
+  "text": "Utilizza il calcolatore per verificare il totale* ** *** che andrai a pagare.",
   "section": [
     {
       "title": "110 € / settimana",
@@ -17,5 +17,10 @@
       "content": "se l'iscrizione comprende sette o più settimane di campo estivo",
       "icon": "notes.svg"
     }
+  ],
+  "notes": [
+    "* Nel prezzo sono compresi trasporti per la piscina e le gite, pranzi e merende, attività ed esperti.",
+    "** Il secondo fratello/sorella paga 10€ in meno a settimana.",
+    "*** Ciò che CRE è convenzionato con alcune aziende e partecipa al progetto “Conciliazione vita-lavoro”."
   ]
 }

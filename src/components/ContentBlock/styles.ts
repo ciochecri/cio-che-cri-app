@@ -29,8 +29,6 @@ export const ContentWrapper = styled("div")`
 `;
 
 export const ServiceWrapper = styled("div")`
-  display: flex;
-  justify-content: space-between;
   max-width: 100%;
 `;
 
@@ -45,6 +43,11 @@ export const MinTitle = styled("h6")`
 
 export const MinPara = styled("p")`
   font-size: 13px;
+`;
+
+export const NotePara = styled("p")`
+  font-size: 11px;
+  margin-bottom: 0.5em;
 `;
 
 export const ButtonWrapper = styled("div")`

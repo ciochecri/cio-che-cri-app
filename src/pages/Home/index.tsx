@@ -1,10 +1,11 @@
 import { lazy } from "react";
 import IntroContent from "../../content/IntroContent.json";
 import MiddleBlockContent from "../../content/MiddleBlockContent.json";
-import AboutContent from "../../content/AboutContent.json";
+import QuantoCostiamo from "../../content/QuantoCostiamo.json";
 import MissionContent from "../../content/MissionContent.json";
 import ProductContent from "../../content/ProductContent.json";
 import ContactContent from "../../content/ContactContent.json";
+import DoveAndiamo from "../../content/DoveAndiamo.json";
 import MiddleBlock from "../../components/MiddleBlock";
 
 const Contact = lazy(() => import("../../components/ContactForm"));
@@ -30,28 +31,30 @@ const Home = () => {
         direction="right"
         title={MissionContent.title}
         content={MissionContent.text}
-        icon="product-launch.svg"
+        icon="cosa-facciamo.svg"
         id="attivita"
       />
       <ContentBlock
         direction="left"
-        title={ProductContent.title}
-        content={ProductContent.text}
-        icon="waving.svg"
+        title={DoveAndiamo.title}
+        content={DoveAndiamo.text}
+        icon="dove-andiamo.svg"
         id="attivita2"
       />
       <ContentBlock
         direction="right"
-        title={MissionContent.title}
-        content={MissionContent.text}
-        icon="product-launch.svg"
+        title={ProductContent.title}
+        content={ProductContent.text}
+        icon="cosa-mangiamo.svg"
         id="menu"
       />
+      
       <ContentBlock
         direction="left"
-        title={AboutContent.title}
-        content={AboutContent.text}
-        section={AboutContent.section}
+        title={QuantoCostiamo.title}
+        content={QuantoCostiamo.text}
+        section={QuantoCostiamo.section}
+        notes={QuantoCostiamo.notes}
         icon="graphs.svg"
         id="prezzi"
         priceCalculator={true}

@@ -39,8 +39,8 @@ const ReviewBlock = ({ t }: ReviewBlockProps) => {
           <Row justify="center" align="middle">
             <ContentWrapper>
               <Col lg={24} md={24} sm={24} xs={24}>
-                <h6>Dicono di noi!</h6>
-                <Content>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium</Content>
+                <h6>COSA DITE DI NOI?</h6>
+                <Content>Ogni anno alla fine del centro estivo chiediamo un feedback attraverso un Google Form e queste sono alcune delle risposte!</Content>
               </Col>
             </ContentWrapper>
           </Row>

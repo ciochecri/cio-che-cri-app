@@ -79,8 +79,9 @@ const Footer = ({ t }: { t: TFunction }) => {
             align="middle"
             style={{ paddingTop: "3rem" }}
           >
+
             <LanguageSwitchContainer>
-              <LanguageSwitch onClick={() => handleChange("en")}>
+              {/*<LanguageSwitch onClick={() => handleChange("en")}>
                 <SvgIcon
                   src="united-states.svg"
                   aria-label="homepage"
@@ -95,7 +96,7 @@ const Footer = ({ t }: { t: TFunction }) => {
                   width="30px"
                   height="30px"
                 />
-              </LanguageSwitch>
+              </LanguageSwitch>*/}
             </LanguageSwitchContainer>
             <FooterContainer>
               <SocialLink
