@@ -66,8 +66,8 @@ const Footer = ({ t }: { t: TFunction }) => {
             </Col>
             <Col lg={6} md={6} sm={12} xs={12}>
               <Title>Centro estivo</Title>
-              <Large to="/">Volantino</Large>
-              <Large to="/">Regolamento</Large>
+              <Large href="https://drive.google.com/uc?export=download&id=1qKm7BrAIZxBb0LogOL4BqQozItDNMnp6">Volantino</Large>
+              <Large href="https://drive.google.com/uc?export=download&id=1z2qdvlqzq_dEXBOuTt4JEEx2HHiXe9sE">Regolamento</Large>
             </Col>
           </Row>
         </Container>
@@ -100,15 +100,15 @@ const Footer = ({ t }: { t: TFunction }) => {
             </LanguageSwitchContainer>
             <FooterContainer>
               <SocialLink
-                href="https://github.com/Adrinlol/create-react-app-adrinlol"
+                href="https://www.facebook.com/pallamanoromagna1/?locale=it_IT"
                 src="facebook.svg"
               />
               <SocialLink
-                href="https://twitter.com/Adrinlolx"
+                href="https://www.instagram.com/pallamanomordano1980/"
                 src="instagram.svg"
               />
               <SocialLink
-                href="https://www.linkedin.com/in/lasha-kakabadze/"
+                href="https://www.pallamanoromagna.it/"
                 src="handball.svg"
               />
             </FooterContainer>
