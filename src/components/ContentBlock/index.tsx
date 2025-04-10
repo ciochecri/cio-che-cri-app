@@ -49,12 +49,10 @@ const ContentBlock = ({
           id={id}
           direction={direction}
         >
-          <Col lg={11} md={11} sm={12} xs={24}>
-            {!cards && !priceCalculator && <SvgIcon src={icon} width="100%" height="100%" />}
-            {cards && <CardBlock />}
-            {priceCalculator && <PriceCalculator />}
+          {!cards && !priceCalculator && <Col lg={11} md={11} sm={12} xs={24}>
+            <SvgIcon src={icon} width="100%" height="100%" />
             {/* !cards && <img src="https://i.ibb.co/TKvrMsq/Logo-CRE.png" width="100%" height="100%"/>*/}
-          </Col>
+          </Col>}
           <Col lg={11} md={11} sm={11} xs={24}>
             <ContentWrapper>
               <h6>{title}</h6>
@@ -129,6 +127,10 @@ const ContentBlock = ({
               )}
             </ContentWrapper>
           </Col>
+          {(cards || priceCalculator) && <Col lg={11} md={11} sm={12} xs={24}>
+            {cards && <CardBlock />}
+            {priceCalculator && <PriceCalculator />}
+          </Col>}
         </StyledRow>
       </Fade>
     </ContentSection>

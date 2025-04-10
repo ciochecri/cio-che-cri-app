@@ -19,7 +19,7 @@ const Home = () => {
     <Container>
       <ScrollToTop />
       <ContentBlock
-        direction="right"
+        direction="left"
         title={IntroContent.title}
         content={IntroContent.text}
         button={IntroContent.button}
@@ -50,7 +50,7 @@ const Home = () => {
       />
       
       <ContentBlock
-        direction="left"
+        direction="right"
         title={QuantoCostiamo.title}
         content={QuantoCostiamo.text}
         section={QuantoCostiamo.section}
