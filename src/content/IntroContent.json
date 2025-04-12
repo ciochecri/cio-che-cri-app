@@ -1,9 +1,11 @@
 {
   "title": "DAL 9 GIUGNO ALL’1 AGOSTO! SEI DEI NOSTRI? ",
-  "text": "Ti aspettiamo al Ció che CRE!, il centro estivo organizzato dalla pallamano di Mordano che si svolge nella palestra della scuola primaria in via Aldo Moro 1.",
+  "text": "Ti aspettiamo al Ció che CRE!, il centro estivo organizzato dalla pallamano di Mordano che si svolge nella palestra della scuola primaria in via Aldo Moro 1. Iscriviti a partire dal 1 maggio!",
   "button": [
     {
       "title": "Vai al modulo di iscrizione",
+      "color": "#fff",
+      "disabled" : true,
       "href" : "https://forms.gle/fBHyAVrmFGTqKgVv6"
     },
     {
