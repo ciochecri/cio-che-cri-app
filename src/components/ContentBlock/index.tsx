@@ -57,7 +57,6 @@ const ContentBlock = ({
             <ContentWrapper>
               <h6>{title}</h6>
               <Content>{content}</Content>
-              {direction === "right" ? (
                 <ButtonWrapper>
                   {typeof button === "object" &&
                     button.map(
@@ -83,7 +82,6 @@ const ContentBlock = ({
                       }
                     )}
                 </ButtonWrapper>
-              ) : (
                 <ServiceWrapper>
                   <Row justify="space-between">
                     {typeof section === "object" &&
@@ -124,7 +122,6 @@ const ContentBlock = ({
                       )}
                   </Col>
                 </ServiceWrapper>
-              )}
             </ContentWrapper>
           </Col>
           {(cards || priceCalculator) && <Col lg={11} md={11} sm={12} xs={24}>
