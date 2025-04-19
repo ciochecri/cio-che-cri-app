@@ -11,3 +11,11 @@ export const PriceCalculatorSection = styled("section")`
     padding: 4rem 0 4rem;
   }
 `;
+
+export const PriceCalculatorPriceValue = styled("div")`
+  min-height: 170px;
+
+  @media screen and (max-width: 1024px) {
+   min-height: 100px;
+  }
+`;

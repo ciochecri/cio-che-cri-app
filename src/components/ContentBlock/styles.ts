@@ -6,7 +6,11 @@ export const ContentSection = styled("section")`
   padding: 4rem 0 4rem;
 
   @media only screen and (max-width: 1024px) {
-    padding: 4rem 0 4rem;
+    padding: 3rem 0 3rem;
+  }
+
+  @media only screen and (max-width: 768px) {
+    padding: 2rem 0 0;
   }
 `;
 
@@ -24,7 +28,7 @@ export const ContentWrapper = styled("div")`
   max-width: 540px;
 
   @media only screen and (max-width: 575px) {
-    padding-top: 4rem;
+    padding-top: 2rem;
   }
 `;
 
@@ -54,6 +58,7 @@ export const ButtonWrapper = styled("div")`
   display: flex;
   justify-content: space-between;
   max-width: 100%;
+  margin: 1.5rem 0 2rem 0;
 
   @media screen and (min-width: 1024px) {
     max-width: 80%;

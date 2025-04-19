@@ -57,7 +57,7 @@ const ContentBlock = ({
             <ContentWrapper>
               <h6>{title}</h6>
               <Content>{content}</Content>
-                <ButtonWrapper>
+                {button && <ButtonWrapper>
                   {typeof button === "object" &&
                     button.map(
                       (
@@ -81,8 +81,8 @@ const ContentBlock = ({
                         );
                       }
                     )}
-                </ButtonWrapper>
-                <ServiceWrapper>
+                </ButtonWrapper>}
+                {section &&<ServiceWrapper>
                   <Row justify="space-between">
                     {typeof section === "object" &&
                       section.map(
@@ -121,7 +121,7 @@ const ContentBlock = ({
                         }
                       )}
                   </Col>
-                </ServiceWrapper>
+                </ServiceWrapper>}
             </ContentWrapper>
           </Col>
           {(cards || priceCalculator) && <Col lg={11} md={11} sm={12} xs={24}>
