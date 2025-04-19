@@ -1,4 +1,5 @@
-import { lazy } from "react";
+import { lazy, useEffect } from "react";
+import { Modal } from 'antd';
 import IntroContent from "../../content/IntroContent.json";
 import MiddleBlockContent from "../../content/MiddleBlockContent.json";
 import QuantoCostiamo from "../../content/QuantoCostiamo.json";
@@ -14,7 +15,40 @@ const Container = lazy(() => import("../../common/Container"));
 const ScrollToTop = lazy(() => import("../../common/ScrollToTop"));
 const ContentBlock = lazy(() => import("../../components/ContentBlock"));
 
+
+const countDown = () => {
+  let secondsToGo = 60;
+
+  const modal = Modal.info({
+    title: <>
+         L’estate sta arrivando (anche se non sembra) e con lei come ogni anno torna il Ció che CRE! 😎<br />
+         Quest’anno siamo ricchi di novità e non vediamo l’ora di svelarvele tutte lunedì 28 aprile alle 20:00 nella Sala Polivalente di Mordano (Via della Repubblica, dietro al Comune di Mordano) per la serata di presentazione dei centri estivi! 🤟🏼
+      </>,
+    content: `Questo pop-up verrà eliminato automaticamente tra ${secondsToGo} secondi.`,
+  });
+
+  const timer = setInterval(() => {
+    secondsToGo -= 1;
+    modal.update({
+      content: `Questo pop-up verrà eliminato automaticamente tra ${secondsToGo} secondi.`,
+    });
+  }, 1000);
+
+  setTimeout(() => {
+    clearInterval(timer);
+    modal.destroy();
+  }, secondsToGo * 1000);
+};
+
 const Home = () => {
+  useEffect(() => {
+    var varDate = new Date("2025-04-28T20:00:00"); //dd-mm-YYYY
+    var today = new Date();
+    console.log(varDate);
+    console.log(today);
+    if(varDate >= today)
+      countDown()
+ });
   return (
     <Container>
       <ScrollToTop />
