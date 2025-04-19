@@ -20,7 +20,7 @@ const PriceCalculator = () => {
         max={8}
         onChange={onChange}
         value={typeof inputValue === 'number' ? inputValue : 0}
-        tooltip={{ formatter, open: true }}
+        tooltip={{ formatter }}
       />
       <PriceCalculatorPriceValue>
         <h6 style={{textDecoration : inputValue > 3 ? "line-through" : "none", textAlign: "center"}}>{inputValue * 110 + " €"}</h6>
