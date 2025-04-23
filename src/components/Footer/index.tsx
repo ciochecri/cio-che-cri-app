@@ -66,7 +66,7 @@ const Footer = ({ t }: { t: TFunction }) => {
             </Col>
             <Col lg={6} md={6} sm={12} xs={12}>
               <Title>Centro estivo</Title>
-              <Large href="https://drive.google.com/uc?export=download&id=1qKm7BrAIZxBb0LogOL4BqQozItDNMnp6">Volantino</Large>
+              <Large href="https://drive.google.com/uc?export=download&id=1onVXxdUhJdAc9o8US5DC6i1-A9H1pctZ">Volantino</Large>
               <Large href="https://drive.google.com/uc?export=download&id=1z2qdvlqzq_dEXBOuTt4JEEx2HHiXe9sE">Regolamento</Large>
             </Col>
           </Row>
