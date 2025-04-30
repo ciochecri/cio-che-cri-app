@@ -57,6 +57,9 @@ const Footer = ({ t }: { t: TFunction }) => {
               <a href="mailto:ciochecre@gmail.com">
                 <Chat>Inviaci una mail!</Chat>
               </a>
+              <a href="https://chat.whatsapp.com/H6O6Rqt8mHTDSh9DysFaV">
+                <Chat>Iscriviti al gruppo WhatsApp!</Chat>
+              </a>
             </Col>
             <Col lg={8} md={8} sm={12} xs={12}>
               <Language>Indirizzo</Language>
