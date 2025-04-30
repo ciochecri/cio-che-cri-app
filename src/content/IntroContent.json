@@ -4,8 +4,8 @@
   "button": [
     {
       "title": "Vai al modulo di iscrizione",
-      "color": "#fff",
-      "disabled" : true,
+      "color": "#a7148d",
+      "disabled" : false,
       "href" : "https://forms.gle/fBHyAVrmFGTqKgVv6"
     },
     {
