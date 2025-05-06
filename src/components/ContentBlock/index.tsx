@@ -10,6 +10,7 @@ import CardBlock from "../CardBlock";
 import {
   ContentSection,
   Content,
+  Content2,
   ContentWrapper,
   ServiceWrapper,
   MinTitle,
@@ -57,6 +58,15 @@ const ContentBlock = ({
             <ContentWrapper>
               <h6>{title}</h6>
               <Content>{content}</Content>
+              {cards && <Content2>
+                <span style={{marginBottom: 0}}>Per l’iscrizione prepara: </span>
+                <ul>
+                  <li>documento di identità tuo e dei delegati</li>
+                  <li>⁠tessera sanitaria con codice fiscale visibile</li>
+                  <li>ricevuta del bonifico in formato PDF</li>
+                  <li>⁠libretto dello sportivo valido per la durata di frequenza del centro estivo</li>
+                </ul>
+                </Content2>}
                 {button && <ButtonWrapper>
                   {typeof button === "object" &&
                     button.map(
