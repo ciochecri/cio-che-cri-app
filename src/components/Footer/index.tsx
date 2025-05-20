@@ -49,7 +49,7 @@ const Footer = ({ t }: { t: TFunction }) => {
       <FooterSection id="footer">
         <Container>
           <Row justify="space-between">
-            <Col lg={10} md={10} sm={12} xs={12}>
+            <Col lg={10} md={10} sm={12} xs={24}>
               <Language>Contatti</Language>
               <Para>
                 {t(`Hai delle domande? Non esitare a contattarci.`)}
@@ -61,13 +61,16 @@ const Footer = ({ t }: { t: TFunction }) => {
                 <Chat>Iscriviti al gruppo WhatsApp!</Chat>
               </a>
             </Col>
-            <Col lg={8} md={8} sm={12} xs={12}>
+            <Col lg={8} md={8} sm={12} xs={24}>
               <Language>Indirizzo</Language>
               <Para>A. S. D. PALLAMANO MORDANO</Para>
               <Para>Via Aldo Moro, 1</Para>
               <Para>40027 Mordano (BO)</Para>
+              <Language style={{marginTop: "1em"}}>IBAN</Language>
+              <Para>A. S. D. PALLAMANO MORDANO</Para>
+              <Para>IT04Y0846236980000005036590</Para>
             </Col>
-            <Col lg={6} md={6} sm={12} xs={12}>
+            <Col lg={6} md={6} sm={12} xs={24}>
               <Title>Centro estivo</Title>
               <Large href="https://drive.google.com/uc?export=download&id=1onVXxdUhJdAc9o8US5DC6i1-A9H1pctZ">Volantino</Large>
               <Large href="https://drive.google.com/uc?export=download&id=1z2qdvlqzq_dEXBOuTt4JEEx2HHiXe9sE">Regolamento</Large>

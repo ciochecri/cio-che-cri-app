@@ -63,7 +63,7 @@ const ContentBlock = ({
                 <ul>
                   <li>documento di identità tuo e dei delegati</li>
                   <li>⁠tessera sanitaria con codice fiscale visibile</li>
-                  <li>ricevuta del bonifico in formato PDF</li>
+                  <li>ricevuta del bonifico in formato PDF intestato all'IBAN IT04Y0846236980000005036590</li>
                   <li>⁠libretto dello sportivo valido per la durata di frequenza del centro estivo</li>
                 </ul>
                 </Content2>}

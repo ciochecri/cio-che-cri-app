@@ -62,6 +62,13 @@ const Home = () => {
         cards={true}
       />
       <ContentBlock
+        direction="left"
+        title={MiddleBlockContent.title}
+        content={MiddleBlockContent.text}
+        icon="a-chi-e-rivolto.png"
+        id="achierivolto"
+      />
+      <ContentBlock
         direction="right"
         title={MissionContent.title}
         content={MissionContent.text}
