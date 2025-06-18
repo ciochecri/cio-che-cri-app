@@ -59,6 +59,11 @@ const CardBlock = ({ t }: CardBlockProps) => {
           'https://docs.google.com/spreadsheets/d/e/2PACX-1vSiQYKdJisuLcFg0vydiJGGwYTI6wv1SoWVMPECybZhtrkWm4Zsme2yAPeKfKSzkJXBsESxtY60oSrN/pub?gid=574938590&single=true&output=csv'
         )
       ).blob().then(b => b.text());
+      var res_seq = await (
+        await fetch(
+          'https://docs.google.com/spreadsheets/d/e/2PACX-1vR8lYl1nsSky2wAyXJPdIzWyxrLqKYX8GAAPNdavVFDv-VHhzi9hQcgp8n85aUp5UCak91xEnh_NGGL/pub?gid=664164375&single=true&output=csv'
+        )
+      ).blob().then(b => b.text());
 
       type WeekDashboard = {
         S1: number;
@@ -71,21 +76,35 @@ const CardBlock = ({ t }: CardBlockProps) => {
         S8: number;
       };
 
+      type Sequenze = {
+        'Settimana corrente': number;
+      };
+
       const results = Papa.parse<WeekDashboard>(res, {
         dynamicTyping: true,
         header: true,
         skipEmptyLines: true,
       });
 
+      const results_sequenze = Papa.parse<Sequenze>(res_seq, {
+        dynamicTyping: true,
+        header: true,
+        skipEmptyLines: true,
+      });
+      console.log("pippo");
+      console.log(results_sequenze);
+
       if(results?.data[0]){
-        const data = [results.data[0]['S1'],
-         results.data[0]['S2'],
-         results.data[0]['S3'],
-         results.data[0]['S4'],
-         results.data[0]['S5'],
-         results.data[0]['S6'],
-         results.data[0]['S7'],        
-         results.data[0]['S8']];
+        const data = [
+          results_sequenze?.data[0]['Settimana corrente'] < 1 ? results.data[0]['S1'] : MAX_NUM,
+          results_sequenze?.data[0]['Settimana corrente'] < 2 ? results.data[0]['S2'] : MAX_NUM,
+          results_sequenze?.data[0]['Settimana corrente'] < 3 ? results.data[0]['S3'] : MAX_NUM,
+          results_sequenze?.data[0]['Settimana corrente'] < 4 ? results.data[0]['S4'] : MAX_NUM,
+          results_sequenze?.data[0]['Settimana corrente'] < 5 ? results.data[0]['S5'] : MAX_NUM,
+          results_sequenze?.data[0]['Settimana corrente'] < 6 ? results.data[0]['S6'] : MAX_NUM,
+          results_sequenze?.data[0]['Settimana corrente'] < 7 ? results.data[0]['S7'] : MAX_NUM,
+          results_sequenze?.data[0]['Settimana corrente'] < 8 ? results.data[0]['S8'] : MAX_NUM,
+        ];
         setCardData(data);
       }
     };
@@ -97,7 +116,7 @@ const CardBlock = ({ t }: CardBlockProps) => {
     <CardBlockSection>
       {cardData.map((card, index) => (
         <Content style={{backgroundColor: getColor(MAX_NUM - card - OFFSET), color: getTextColor(MAX_NUM - card - OFFSET)}}>
-          <h6 style={{fontSize: '15px'}}>Settimana {index + 1}</h6>
+          <h6 style={{fontSize: '15px', color: getTextColor(MAX_NUM - card - OFFSET)}}>Settimana {index + 1}</h6>
           <div style={{whiteSpace: 'pre-line', color: getTextColor(MAX_NUM - card - OFFSET)}}>
             {getSettimanaDescription(index + 1)}
           </div>
